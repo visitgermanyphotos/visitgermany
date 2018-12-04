@@ -1,6 +1,8 @@
-# Created by .ignore support plugin (hsz.mobi)
-### macOS template
-# General
+# Application
+public/*.bundle.css
+public/*.bundle.js
+
+### macOS
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -26,10 +28,12 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-### AppEngine template
+
+### AppEngine
 # Google App Engine generated folder
 appengine-generated/
-### Terraform template
+
+### Terraform
 # Local .terraform directories
 **/.terraform/*
 
@@ -45,12 +49,14 @@ crash.log
 # version control.
 #
 # example.tfvars
-### Sass template
+
+### Sass
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
-### Go template
+
+### Go
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -63,29 +69,9 @@ crash.log
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-### JetBrains template
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# User-specific stuff
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
-
-# Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
-
-# Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
+### JetBrains
+.idea/
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
@@ -124,7 +110,8 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
-### Node template
+
+### Node
 # Logs
 logs
 *.log
@@ -198,10 +185,10 @@ typings/
 
 # Serverless directories
 .serverless
-### VisualStudioCode template
+
+### VisualStudioCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-

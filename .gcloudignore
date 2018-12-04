@@ -2,6 +2,12 @@
 .git
 .gitignore
 
+# NodeJS
+node_modules/
+
+# Assets source code
+assets/
+
 # Binaries for programs and plugins
 *.exe
 *.exe~

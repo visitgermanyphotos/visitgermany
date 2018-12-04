@@ -2,9 +2,17 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
+)
+
+var (
+	indexTmpl = template.Must(
+		template.ParseFiles(filepath.Join("templates", "frontend", "index.html")),
+	)
 )
 
 func main() {
@@ -26,5 +34,8 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprint(w, "Hello, World! Visit Germany is on the way!")
+	if err := indexTmpl.Execute(w, nil); err != nil {
+		log.Printf("Error executing template: %v", err)
+		http.Error(w, "Internal server error", http.StatusInternalServerError)
+	}
 }
